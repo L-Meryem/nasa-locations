@@ -19,7 +19,6 @@ fetch(url)
 
             h2.innerText = facility.center;
             location.innerText = `${facility.city}, ${facility.state} ${facility.zipcode}, ${facility.country}`;
-            weather.innerText = '70°F';
             fetch(weatherUrl)
                 .then(res => res.json())
                 .then(data => {
